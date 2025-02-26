@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
-const envSchema = z.object({
+const EnvSchema = z.object({
   API_URL: z.string().url(),
 });
 
-export { envSchema };
+export { EnvSchema };
