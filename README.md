@@ -49,5 +49,5 @@ O aplicativo será iniciado em [`http://localhost:3000`](http://localhost:3000).
 Para rodar os testes:
 
 ```sh
-npm test
+npm run test
 ```
