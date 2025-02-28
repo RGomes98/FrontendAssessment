@@ -1,18 +1,18 @@
 import { z } from 'zod';
 
 const ProductSchema = z.object({
-  id: z.number(),
-  title: z.string(),
-  price: z.number().positive(),
+  id: z.number().int().or(z.string().uuid()),
+  title: z.string().max(30, { message: 'O título deve ter no máximo 30 caracteres.' }),
+  price: z
+    .number({ message: 'Informe um preço válido.' })
+    .positive({ message: 'O preço deve ser maior que zero.' }),
   category: z.string(),
   description: z.string(),
-  image: z.string(),
+  image: z.string().url({ message: 'Forneça uma URL válida para a imagem.' }),
+  rating: z.number().min(1).max(5),
 });
 
-const RatingSchema = z.object({ rating: z.number().min(1).max(5) });
-
-type Rating = z.infer<typeof RatingSchema>;
 type Product = z.infer<typeof ProductSchema>;
 
-export type { Product, Rating };
-export { ProductSchema, RatingSchema };
+export type { Product };
+export { ProductSchema };
