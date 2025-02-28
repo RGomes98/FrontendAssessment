@@ -105,7 +105,10 @@ function Root() {
     };
 
     const validData = handleValidateFormData({ formData, schema: ProductSchema });
-    if (validData) createProduct(validData);
+    if (!validData) return;
+
+    createProduct(validData);
+    modalState.setState(false);
   }
 
   return (

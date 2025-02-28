@@ -37,7 +37,7 @@ export function Grid() {
       {
         condition: !paginatedProducts.length,
         fallback: (
-          <span className='col-span-5 flex aspect-video items-center justify-center rounded-md bg-gray-200'>
+          <span className='col-span-5 flex aspect-video items-center justify-center rounded-md bg-gray-200 text-3xl'>
             Nenhum Produto Encontrado.
           </span>
         ),
