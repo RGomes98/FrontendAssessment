@@ -51,3 +51,11 @@ Para rodar os testes:
 ```sh
 npm run test
 ```
+
+## Observação
+
+Caso o Next.js falhe ao baixar as **fonts** do Google Fonts, reinicie o ambiente de desenvolvimento utilizando **Ctrl + C** para parar o processo atual e execute novamente o comando:
+
+```sh
+npm run dev
+```
