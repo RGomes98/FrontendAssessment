@@ -14,7 +14,7 @@ export function useGetThumbnail({ imageSrc }: UseGetThumbnail) {
     (async () => {
       try {
         setIsLoading(true);
-        const response = await fetch(imageSrc);
+        const response = await fetch(imageSrc, { cache: 'force-cache' });
         const buffer = URL.createObjectURL(await response.blob());
         setThumbnailContent(buffer);
       } catch (error) {
