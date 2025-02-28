@@ -21,7 +21,7 @@ export function Filter() {
       {
         condition: !categories.length,
         fallback: (
-          <span className='h-[36px] w-[180px] rounded-md bg-gray-200 font-medium'>
+          <span className='flex h-[36px] w-[200px] items-center justify-center rounded-md bg-gray-200 text-xs font-medium'>
             Nenhum Categoria Encontrada.
           </span>
         ),

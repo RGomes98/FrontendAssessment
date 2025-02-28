@@ -140,7 +140,10 @@ function Root({ products }: { products: Product[] }) {
     };
 
     const validData = handleValidateFormData({ formData, schema: ProductSchema.omit({ category: true }) });
-    if (validData) updateProduct(validData);
+    if (!validData) return;
+
+    updateProduct(validData);
+    modalState.setState(false);
   }
 
   return (
