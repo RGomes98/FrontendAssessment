@@ -1,3 +1,21 @@
+# Desafio Técnico - Front End - EADSKILL
+
+## To Do:
+
+- Finalizar e revisar os testes.
+- Resetar a paginação nas operações de `CREATE`, `DELETE` e `UPDATE`.
+- Organizar a estrutura do app e modularizar os componentes.
+- Revisar o custom hook `usePagination`: centralizar a lógica de paginação.
+- Revisar o custom hook `useProductActions`: eliminar `spread operators` e a recriação desnecessária de objetos/arrays.
+- Revisar o custom hook `useSortProducts`: remover possíveis `side effects`.
+- Revisar o custom hook `useSelect` e as funções utilitárias de `searchParams`: rever a abordagem do reset da paginação.
+- Revisar o custom hook `usePendingState`.
+- Revisar o custom hook `useGetThumbnail`: remover a checagem desnecessária do `imgSrc`.
+- Reavaliar a gestão do estado global de `products` e `fetchProducts`.
+- Revisar o service `getAllProducts`: garantir que a estrutura dos dados esteja correta antes de realizar qualquer manipulação, e criar uma função genérica para abstrair o processo de `fetch`.
+- Aprimorar o modal de visualização do produto.
+- Atualizar o nome do repositório.
+
 ## Requisitos
 
 Antes de iniciar, certifique-se de ter os seguintes requisitos atendidos:
