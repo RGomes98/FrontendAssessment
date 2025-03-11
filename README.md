@@ -1,4 +1,4 @@
-# Desafio Técnico - Front End - EADSKILL
+# Desafio Técnico - Frontend - EADSKILL
 
 ## To Do:
 
@@ -37,8 +37,8 @@ Antes de iniciar, certifique-se de ter os seguintes requisitos atendidos:
 
 3. Clone o repositório e instale as dependências:
    ```sh
-   git clone https://github.com/RGomes98/FrontendAssignment.git
-   cd FrontendAssignment
+   git clone https://github.com/RGomes98/FrontendAssessment.git
+   cd FrontendAssessment
    npm install
    ```
 
