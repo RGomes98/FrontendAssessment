@@ -1,4 +1,4 @@
-# Desafio Técnico - Front End - EADSKILL
+# Desafio Técnico - Frontend - EADSKILL
 
 ## To Do:
 
@@ -14,7 +14,6 @@
 - Reavaliar a gestão do estado global de `products` e `fetchProducts`.
 - Revisar o service `getAllProducts`: garantir que a estrutura dos dados esteja correta antes de realizar qualquer manipulação, e criar uma função genérica para abstrair o processo de `fetch`.
 - Aprimorar o modal de visualização do produto.
-- Atualizar o nome do repositório.
 
 ## Requisitos
 
@@ -37,8 +36,8 @@ Antes de iniciar, certifique-se de ter os seguintes requisitos atendidos:
 
 3. Clone o repositório e instale as dependências:
    ```sh
-   git clone https://github.com/RGomes98/FrontendAssignment.git
-   cd FrontendAssignment
+   git clone https://github.com/RGomes98/FrontendAssessment.git
+   cd FrontendAssessment
    npm install
    ```
 
